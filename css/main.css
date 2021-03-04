@@ -1,0 +1,113 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container input {
+    width: 300px;
+}
+
+.container button {
+    width: 300px;
+    margin-top: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    z-index: 999;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.container button.loading img {
+    max-width: 35px;
+}
+
+.alert {
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 150px);
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loading {
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loading img {
+    max-width: 45px;
+    max-height: 100%;
+    margin: 0px auto;
+}
+
+a.loading img {
+    margin-top: -2px;
+}
+
+a.button-custom.loading {
+    padding: 6px 0px 0px 0px !important;
+}
+
+.loading-absolute {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: .5s fade-in forwards;
+}
+
+.loading-absolute img {
+    max-width: 45px;
+    filter: brightness(0.85);
+}
+
+.loading-input {
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    z-index: 90;
+}
+
+.loading-input img {
+    width: 25px;
+}
+
+#logo {
+    max-width: 120px;
+    margin: 10px auto;
+}

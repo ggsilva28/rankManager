@@ -1,0 +1,31 @@
+<div id="logo"> <img src="../../img/logo.png" alt=""> </div>
+
+<div template="page-content"></div>
+
+<script template="script" src="../../helpers/helper.js"></script>
+<script template="script" src="../../helpers/firebase.js"></script>
+
+<script template="script" src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script template="script" src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script template="script" src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+<script template="script">
+    setTimeout(function() {
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDTPh93yPgykyWUuaJYuCwcTfRLHVN7RaU",
+            authDomain: "gabrielgs-x1.firebaseapp.com",
+            databaseURL: "https://gabrielgs-x1.firebaseio.com",
+            projectId: "gabrielgs-x1",
+            storageBucket: "gabrielgs-x1.appspot.com",
+            messagingSenderId: "908643282590",
+            appId: "1:908643282590:web:770c6aefa0accc148d558f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        console.log(firebase)
+        x1Firabase.start()
+    }, 500)
+</script>
+
+<div template="page-scripts"></div>

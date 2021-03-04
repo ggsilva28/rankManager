@@ -1,0 +1,72 @@
+.container {
+    padding: 50px 0px;
+    height: max-content !important;
+    max-width: 900px !important;
+}
+
+.jogador {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 1280px;
+    margin: 10px 30px;
+    padding: 15px 15px 15px 35px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.jogador .posicao {
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    background-color: rgb(46, 65, 169);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.jogador .nome {
+    flex: 1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.jogador .pontos {
+    color: rgb(46, 65, 169);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.lista {
+    width: 100%;
+}
+
+.jogador a {
+    width: 25px;
+    text-align: center;
+    margin: 5px 3px;
+    background-color: #f6f6f6;
+    font-weight: bolder;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogador a.remove {
+    color: red
+}
+
+.jogador a.remove img {
+    width: 10px;
+}
+
+.jogador a:hover {
+    background-color: #2e40a93f;
+}

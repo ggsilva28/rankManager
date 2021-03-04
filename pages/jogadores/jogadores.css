@@ -1,0 +1,121 @@
+.hidden {
+    display: none;
+}
+
+.container {
+    padding: 50px 0px;
+    height: max-content !important;
+    max-width: 900px !important;
+}
+
+.jogador {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 1280px;
+    margin: 10px 30px;
+    padding: 15px 15px 15px 35px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.jogador .posicao {
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    background-color: rgb(46, 65, 169);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.jogador .nome {
+    flex: 1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.jogador .pontos {
+    color: rgb(46, 65, 169);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.lideres {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.lideres .jogador {
+    width: 150px;
+    height: 120px;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px 15px 15px;
+}
+
+.lideres .jogador .coroa {
+    position: absolute;
+    top: -35px;
+    left: -20px;
+    width: 35px;
+    z-index: 99;
+    transform: rotate(-25deg);
+}
+
+.lideres .jogador .posicao {
+    top: -15px;
+    left: -15px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+
+.lideres .jogador .pontos {
+    font-size: 30px;
+}
+
+.lideres .jogador[posicao="1"] {
+    margin-bottom: 30px;
+    height: 150px;
+}
+
+.lideres .jogador[posicao="1"] .nome {
+    font-size: 22px;
+}
+
+.lideres .jogador[posicao="2"] .nome {
+    font-size: 20px;
+}
+
+.lideres .jogador[posicao="3"] .nome {
+    font-size: 20px;
+}
+
+.lideres .jogador[posicao="1"] .posicao {
+    background-color: rgb(237, 162, 0);
+}
+
+.lideres .jogador[posicao="2"] .posicao,
+.lideres .jogador[posicao="3"] .posicao {
+    background-color: rgb(46, 151, 169);
+}
+
+.lista {
+    width: 100%;
+    height: max-content;
+    overflow-y: scroll;
+}
+
+.lista::-webkit-scrollbar {
+    width: 0px;
+}
